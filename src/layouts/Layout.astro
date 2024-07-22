@@ -22,6 +22,11 @@ const { description, title } = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.peumabienestar.cl">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="/assets/logoPeuma.png">
     <title>{title}</title>
     <ViewTransitions />
   </head>
