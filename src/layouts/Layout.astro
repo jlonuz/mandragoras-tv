@@ -4,6 +4,7 @@ import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
+import '../styles/global.css';
 
 interface Props {
   description: string;
@@ -28,6 +29,7 @@ const { description, title } = Astro.props;
     <meta property="og:description" content={description}>
     <meta property="og:image" content="/assets/logoPeuma.png">
     <title>{title}</title>
+    <link rel="stylesheet" href="../../styles.css">
     <ViewTransitions />
   </head>
   <body
