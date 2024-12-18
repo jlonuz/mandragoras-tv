@@ -1,0 +1,65 @@
+---
+const images = [
+    '/mandragoras_banner.png',
+    '/editorial.png',
+    '/elgrito.png',
+  '/diccionaria.png',
+  '/practica_futuristas.png'
+];
+
+---
+
+<div class="relative w-full ">
+  <div class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0%);" id="carousel">
+    <!-- <div class="w-full flex-shrink-0 h-5/6" key=''>
+        <img src='/elgrito.png' alt='' class="w-full h-screen" />
+      </div> -->
+    {images.map((src, index) => (
+      <div class="w-full flex-shrink-0 h-5/6 " key={index}>
+        <img src={src} alt={`Slide ${index + 1}`} class="w-full h-screen" />
+      </div>
+    ))}
+  </div>
+  <button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-6" onclick="prevSlide()">&#10094;</button>
+  <button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-6" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<script is:inline>
+    const images = [
+        '/mandragoras_banner.png',
+        '/diccionaria.png',
+        '/elgrito.png',
+        '/practica_futuristas.png'
+    ];
+    let currentIndex = 0;
+    const totalSlides =  images.length;
+
+    function showSlide(index) {
+        const carousel = document.getElementById('carousel');
+        const percentage = -index * 100;
+        carousel.style.transform = `translateX(${percentage}%)`;
+    }
+
+    function nextSlide() {
+        console.log('netx');
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos
+
+    // Ajustar la altura del carrusel
+  function adjustCarouselHeight() {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const heroCarousel = document.getElementById('hero-carousel');
+    heroCarousel.style.height = `calc(100vh - ${headerHeight}px)`;
+  }
+  adjustCarouselHeight();
+    window.nextSlide = nextSlide;
+    window.prevSlide = prevSlide;
+</script>
