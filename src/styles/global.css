@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Baskervville-Regular';
+    src: url('/fonts/Baskervville-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+    font-family: 'Baskervville-Regular', serif;
+}
+
+header {
+    position: fixed;
+    /* height: 50px; */
+    width: 100%;
+    z-index: 1;
+}
