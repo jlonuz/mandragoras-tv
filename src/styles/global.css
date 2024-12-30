@@ -16,8 +16,28 @@ body {
 }
 
 header {
+    background-color: #3F0071;
     position: fixed;
+    top: 0;
     /* height: 50px; */
     width: 100%;
     z-index: 1;
+    
+}
+.social-icons {
+    a { 
+        padding-left: 10px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #150050;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
 }

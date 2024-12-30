@@ -1,31 +1,6 @@
----
-//import { useState } from 'react';
-
-let links = [
-	// {title: 'Nosotras', url: 'nosotras', bgColor: 'purple'},
-    {title: 'Comunicación Feminista', url: 'comunicacion-feminista', bgColor: 'purple'},
-    {title: 'Periodismo no violento', url: 'periodismo-no-violento', bgColor: '#FF6500'},
-    {title: 'Mandrágoras TV', url: 'mandragoras-tv', bgColor: 'orange'},
-    {title: 'Cápsulas', url: 'capsulas', bgColor: 'green'},
-    {title: 'Anillo de la abundancia', url: 'anillo-de-la-abundancia', bgColor: 'red'},
-    {title: 'Contacto', url: 'contacto', bgColor: 'yellow'},
-]
-
-
----
-
-<header class="flex justify-between text-white items-center p-4 text-black shadow-lg">
-    <a href="/" class="flex items-center">
-      <img src="/logo/logo_blanco.png" alt="Logo" class="h-20 w-20 mr-2">
-      <h1 class="text-3xl font-bold">Mandrágorastv</h1>
-    </a>
-    <nav class="hidden md:block">
-        <ul class="flex space-x-4">
-            {links.map(({title, url}) => (
-            <li><a href={url} class="hover:text-gray-400">{title}</a></li>
-            ))}
-        </ul> 
-    </nav>
+<footer>
+    <p>Hecho con ♥ por <a target="_blank" href="https://www.jlonuz.com">jlonuz</a> </p>
+    <p>© 2025 Mandragórastv</p>
     <div class="social-icons flex items-center">
         <a href="https://www.youtube.com/@mandragorastv" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0,0,256,256">
@@ -37,31 +12,5 @@ let links = [
                 <g fill="#FFFFFF" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
             </svg>
         </a>	
-       
     </div>
-    <button class="block md:hidden" id="menu-button" >
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-    </button>
-    <nav id="mobile-menu" class="absolute top-16 right-0 bg-black text-white w-full md:w-auto md:static md:flex hidden md:hidden">
-        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0">
-            {links.map(({title, url}) => (
-            <li><a href={url} class="hover:text-gray-400">{title}</a></li>
-            ))}
-        </ul> 
-    </nav>
-  </header>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuButton = document.getElementById('menu-button');
-        const menu = document.getElementById('mobile-menu');
-
-        if (menuButton && menu) {
-            menuButton.addEventListener('click', function() {
-                menu.classList.toggle('hidden');
-            });
-        }
-    });
-</script>
+</footer>
