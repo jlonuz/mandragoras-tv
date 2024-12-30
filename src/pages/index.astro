@@ -12,12 +12,50 @@ import Layout from '../layouts/Layout.astro';
 	<section class="mt-24">
 		<img width="100%" src="/banner_escuela_comunicacion_feminista.png" alt="">
 		<!-- <img width="100%" src="/mandragoras_banner.png" alt="">  -->
-		<img width="100%" src="/portadas/Portada_periodismo.png" alt="">
+		<!-- <img width="100%" src="/portadas/Portada_periodismo.png" alt="">
 		<img width="100%" src="/portadas/Portada_Colaboraciones.png" alt="">
 		<img width="100%" src="/portadas/Portada_Escuela.png" alt="">
-		<img width="100%" src="/portadas/Portada_Abundancia.png" alt="">
+		<img width="100%" src="/portadas/Portada_Abundancia.png" alt=""> -->
 	</section>
 
+	<section
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		style={{
+			backgroundImage: 'url(/portadas/Portada_Escuela.png)',
+		}}
+	>
+		<a href="/comunicacion-feminista">
+			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 class="text-4xl md:text-7xl mb-4">Comunicación feminista</h1>
+			</div></a>
+	</section>
+	<section
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		style={{
+			backgroundImage: 'url(/portadas/Portada_periodismo.png)',
+		}}
+	>
+		<a href="/periodismo-no-violento">
+			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 class="text-4xl md:text-7xl mb-4">Periodismo no violento</h1>
+			</div>
+		</a>
+		
+	</section>
+	<section
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		style={{
+			backgroundImage: 'url(/portadas/Portada_Abundancia.png)',
+		}}
+	>
+		<a href="/anillo-de-la-abundancia">
+			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 class="text-4xl md:text-7xl mb-4">Anillo de la abundancia</h1>
+			</div></a>
+	</section>
 
 
 </Layout>
