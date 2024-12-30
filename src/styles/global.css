@@ -21,7 +21,7 @@ header {
     top: 0;
     /* height: 50px; */
     width: 100%;
-    z-index: ;
+    z-index: 99;
     
 }
 .social-icons {
@@ -31,8 +31,8 @@ header {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
     background-color: #150050;
     color: #fff;
