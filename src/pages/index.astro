@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 //import Hero from '../components/Hero.astro';
+import Contact from '../components/Contact.astro';
 
 ---
 
@@ -10,13 +11,34 @@ import Layout from '../layouts/Layout.astro';
 	<!-- <Hero /> -->
 
 	<section class="mt-24">
-		<img width="100%" src="/banner_escuela_comunicacion_feminista.png" alt="">
+		<!-- <img class="w-full" src="/tvroja.jpg" alt="Banner Escuela de Comunicación Feminista"> -->
+        <div class="relative w-fullaspect-w-16 aspect-h-9 " style="aspect-ratio: 16 / 9"> 
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/F5PnIrNeQN0?si=-pUhxBhRzP5vmk4s&autoplay=1;controls=0"
+				"autoplay"="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+	<section
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		style={{
+			backgroundImage: 'url(/tvroja.jpg)',
+		}}
+	>
+		<a href="https://www.youtube.com/watch?v=F5PnIrNeQN0&t=3544s" target="_blank">
+			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Sintoniza nuestro canal</h1>
+			</div>
+			<!-- <div class="bg-7">
+				<h1 class="t-stroke t-shadow">TEXT GRADIENT</h1>
+			</div> -->
+				
+		</a>
 		
-		<!-- <img width="100%" src="/mandragoras_banner.png" alt="">  -->
-		<!-- <img width="100%" src="/portadas/Portada_periodismo.png" alt="">
-		<img width="100%" src="/portadas/Portada_Colaboraciones.png" alt="">
-		<img width="100%" src="/portadas/Portada_Escuela.png" alt="">
-		<img width="100%" src="/portadas/Portada_Abundancia.png" alt=""> -->
 	</section>
 
 	<section
@@ -26,9 +48,9 @@ import Layout from '../layouts/Layout.astro';
 		}}
 	>
 		<a href="/comunicacion-feminista">
-			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="absolute inset-0 bg-black opacity-50"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl md:text-7xl mb-4">Comunicación feminista</h1>
+				<h1 class="text-3xl font-bold md:text-5xl mb-4  p-4 t-stroke t-shadow uppercase">Comunicación feminista</h1>
 			</div></a>
 	</section>
 	<section
@@ -38,9 +60,9 @@ import Layout from '../layouts/Layout.astro';
 		}}
 	>
 		<a href="/periodismo-no-violento">
-			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="absolute inset-0 bg-black opacity-50"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl md:text-7xl mb-4">Periodismo no violento</h1>
+				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Periodismo no violento</h1>
 			</div>
 		</a>
 		
@@ -54,14 +76,29 @@ import Layout from '../layouts/Layout.astro';
 		<a href="/anillo-de-la-abundancia">
 			<div class="absolute inset-0 bg-black opacity-30"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl md:text-7xl mb-4">Anillo de la abundancia</h1>
+				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Anillo de la abundancia</h1>
 			</div></a>
 	</section>
+
+	<Contact />
 
 
 </Layout>
 
 <style>
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #000000;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.t-shadow {
+  text-shadow: 7px 7px #3c0569;
+}
+	
+	
 	
 
 	

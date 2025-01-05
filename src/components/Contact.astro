@@ -1,0 +1,62 @@
+<section class="bg-black py-12">
+    <div class="container mx-auto my-16 md:mb-4 flex flex-col md:flex-row items-center">
+        <div class="flex justify-center w-full md:w-1/2 p-4 mb-4 md:mb-0 mx-auto">
+            <img src="/logo/logo_blanco.png" alt="Contact Image" class="w-1/2 h-auto rounded-lg">
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+            <h2 class="text-3xl text-white font-bold mb-6">Contáctanos</h2>
+            <form action="#" method="POST" class="space-y-4">
+                <div class="relative">
+                    <input type="text" id="name" name="name" class="peer mt-4 block w-full px-3 py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl" placeholder=" " />
+                    <label for="name" class="absolute left-3 top-4 text-gray-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-sm peer-focus:text-indigo-500">Nombre</label>
+                </div>
+                <div class="relative">
+                    <input type="email" id="email" name="email" class="peer mt-4 block w-full px-3 py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl" placeholder=" " />
+                    <label for="email" class="absolute left-3 top-2 text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-sm peer-focus:text-indigo-500">Email</label>
+                </div>
+                <div class="relative">
+                    <textarea id="message" name="message" rows="4" class="peer mt-4 block w-full px-6 py-6 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl" placeholder=" "></textarea>
+                    <label for="message" class="absolute left-3 top-2 text-gray-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-500 peer-focus:top-2 peer-focus:text-sm peer-focus:text-indigo-500">Mensaje</label>
+                </div>
+                <div>
+                    <button type="submit" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xl font-medium rounded-md text-white bg-purple-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+                </div>
+            </form>
+            <!-- <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-xl font-medium text-white">Nombre</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl">
+                </div>
+                <div>
+                    <label for="email" class="block text-xl font-medium text-white">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl">
+                </div>
+                <div>
+                    <label for="message" class="block text-xl font-medium text-white">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl"></textarea>
+                </div>
+                <div class="justify-end flex">
+                    <button type="submit" class="w-1/2 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+                </div>
+            </form> -->
+        </div>
+    </div>
+</section>
+<style>
+    button {
+        background-color: #150050;
+        transition: background-color 0.3s;
+    }
+    /* Custom styles for floating labels */
+    .peer-placeholder-shown + label {
+        top: 2rem;
+        font-size: 1rem;
+        color: #6b7280; /* gray-500 */
+    }
+    .peer-focus + label,
+    .peer:not(:placeholder-shown) + label {
+        top: 0;
+        font-size: 0.75rem;
+        color: #6366f1; /* indigo-500 */
+    }
+</style>
