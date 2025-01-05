@@ -13,6 +13,8 @@
 
 body {
     font-family: 'Baskervville-Regular', serif;
+    background-color: #000000;
+    color: #fff;
 }
 
 header {
@@ -30,17 +32,19 @@ header {
     }
 }
 
-footer {
-    /* width: 100%;
-    background-color: #150050;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; */
-    /* z-index: 99; */
+
+.t-stroke {
+    color: transparent;
+    -moz-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #ffffff;
 }
+  
+.t-shadow {
+    text-shadow: 7px 7px #3c0569;
+}
+      
 
 
 
@@ -71,6 +75,8 @@ footer {
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
+    -webkit-transform:scale(1.2);
+	transform:scale(1.2);
   }
   
   /* Position and style the close button (top right corner) */

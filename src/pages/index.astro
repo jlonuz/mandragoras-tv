@@ -11,7 +11,6 @@ import Contact from '../components/Contact.astro';
 	<!-- <Hero /> -->
 
 	<section class="mt-24">
-		<!-- <img class="w-full" src="/tvroja.jpg" alt="Banner Escuela de Comunicación Feminista"> -->
         <div class="relative w-fullaspect-w-16 aspect-h-9 " style="aspect-ratio: 16 / 9"> 
             <iframe 
                 class="absolute top-0 left-0 w-full h-full" 
@@ -23,44 +22,40 @@ import Contact from '../components/Contact.astro';
         </div>
     </section>
 	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
 		style={{
 			backgroundImage: 'url(/tvroja.jpg)',
 		}}
 	>
 		<a href="https://www.youtube.com/watch?v=F5PnIrNeQN0&t=3544s" target="_blank">
-			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="absolute inset-0 bg-black opacity-20"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
 				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Sintoniza nuestro canal</h1>
 			</div>
-			<!-- <div class="bg-7">
-				<h1 class="t-stroke t-shadow">TEXT GRADIENT</h1>
-			</div> -->
-				
 		</a>
 		
 	</section>
 
 	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
 		style={{
 			backgroundImage: 'url(/portadas/Portada_Escuela.png)',
 		}}
 	>
 		<a href="/comunicacion-feminista">
-			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="absolute inset-0 bg-black opacity-20"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
 				<h1 class="text-3xl font-bold md:text-5xl mb-4  p-4 t-stroke t-shadow uppercase">Comunicación feminista</h1>
 			</div></a>
 	</section>
 	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
 		style={{
 			backgroundImage: 'url(/portadas/Portada_periodismo.png)',
 		}}
 	>
 		<a href="/periodismo-no-violento">
-			<div class="absolute inset-0 bg-black opacity-50"></div>
+			<div class="absolute inset-0 bg-black opacity-20"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
 				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Periodismo no violento</h1>
 			</div>
@@ -68,13 +63,13 @@ import Contact from '../components/Contact.astro';
 		
 	</section>
 	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
 		style={{
 			backgroundImage: 'url(/portadas/Portada_Abundancia.png)',
 		}}
 	>
 		<a href="/anillo-de-la-abundancia">
-			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="absolute inset-0 bg-black opacity-20"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
 				<h1 class="text-3xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Anillo de la abundancia</h1>
 			</div></a>
@@ -86,20 +81,14 @@ import Contact from '../components/Contact.astro';
 </Layout>
 
 <style>
-.t-stroke {
-  color: transparent;
-  -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-color: #000000;
-  -webkit-text-stroke-color: #ffffff;
-}
-
-.t-shadow {
-  text-shadow: 7px 7px #3c0569;
-}
-	
-	
-	
-
-	
+	.portada:hover {
+		-webkit-transform:scale(1.2);
+		transform:scale(1.2);
+	}
+	.portada {
+		overflow: hidden;
+		transition: transform 1s;
+		padding: 5px 0;
+	}
 </style>
+

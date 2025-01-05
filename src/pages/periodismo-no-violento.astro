@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="MandrágorasTv | Comunicación Feminista">
@@ -11,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
         >
             <div class="absolute inset-0 bg-black opacity-30"></div>
             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-            <h1 class="text-4xl md:text-7xl mb-4">Periodismo No Violento</h1>
+            <h1 class="text-4xl md:text-7xl mb-4 t-stroke t-shadow uppercase">Periodismo No Violento</h1>
             <!-- <p class="text-xl md:text-2xl mb-8">Tu descripción inspiradora aquí</p>
             <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                 ¡Descubre más!
@@ -19,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
-    <section class="container mx-auto mt-6 md:mb-4">
+    <section class="container mx-auto px-4 m-6 md:mb-4">
         <div class="w-full h-24 bg-contain bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
             }}></div>
@@ -37,9 +38,11 @@ import Layout from '../layouts/Layout.astro';
             <p>El periodismo no violento amplifica las voces que promueven la igualdad, la paridad, las acciones inclusivas y la sostenibilidad. A través de sus narrativas, impulsa transformaciones hacia una realidad libre de opresión y de los múltiples rostros de la violencia, contribuyendo a la construcción de un futuro más justo y humano.</p>
 
         </div>
-        <div class="mb-24 w-full h-24 bg-contain bg-center bg-repeat" style={{
+        <div class="mt-12 w-full  h-24 lg:h-96 bg-cover bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
             }}></div>
     </section>
+
+    <Contact />
 
 </Layout>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="MandrágorasTv | Comunicación Feminista">
@@ -11,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
         >
             <div class="absolute inset-0 bg-black opacity-30"></div>
             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-            <h1 class="text-4xl md:text-7xl mb-4">Anillo de la abundancia</h1>
+            <h1 class="text-4xl md:text-7xl mb-4 t-stroke t-shadow uppercase">Anillo de la abundancia</h1>
             <!-- <p class="text-xl md:text-2xl mb-8">Tu descripción inspiradora aquí</p>
             <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                 ¡Descubre más!
@@ -19,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
-    <section class="container mx-auto mt-6 md:mb-4">
+    <section class="container mx-auto mt-6 px-4 md:mb-4">
         <div class="w-full h-24 bg-contain bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
             }}></div>
@@ -39,9 +40,11 @@ import Layout from '../layouts/Layout.astro';
             <p>En Mandrágorastv, sabemos que la abundancia no solo se mide en recursos materiales, sino en las conexiones, la solidaridad y el compromiso colectivo de quienes sueñan con un mundo diferente. Te esperamos para seguir creciendo juntas.</p>
 
         </div>
-        <div class="mb-24 w-full h-24 bg-contain bg-center bg-repeat" style={{
+        <div class="mt-12 w-full  h-24 lg:h-96 bg-cover bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
             }}></div>
     </section>
+
+    <Contact />
 
 </Layout>

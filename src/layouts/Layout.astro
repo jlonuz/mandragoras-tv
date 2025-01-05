@@ -1,9 +1,9 @@
 ---
 import '../styles/global.css';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import { ViewTransitions } from "astro:transitions";
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
-import MenuToggle from '../components/MenuToggle.astro';
+
 interface Props {
 	title: string;
 }
@@ -21,6 +21,7 @@ const { title } = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,25 +29,21 @@ const { title } = Astro.props;
 	</head>
 	<body  class="flex flex-col min-h-screen">
 		<Header client:load/>
-		<!-- <button class="block " id="menu-button" >
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-			</svg>
-		</button>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn">&times;</a>
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
-		</div> -->
+
 		<main id="main" class="flex-grow">
 			<slot />
-
 		</main>
 
 		<Footer/>
-		<!-- <MenuToggle client:load /> -->
+
+		<script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script is:inline>
+			AOS.init();
+		</script>
+
+		<script>
+			import "../scripts/sidenav.js";
+		</script>
 	</body>
 	
 	
