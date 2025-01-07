@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Contact from '../components/Contact.astro';
 ---
 
 <Layout title="MandrágorasTv | Comunicación Feminista">
@@ -12,7 +11,7 @@ import Contact from '../components/Contact.astro';
         >
             <div class="absolute inset-0 bg-black opacity-30"></div>
             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-            <h1 class="text-4xl md:text-7xl mb-4 t-stroke t-shadow uppercase">Escuela de comunicación feminista</h1>
+            <h1 class="text-4xl md:text-7xl mb-4 t-stroke t-shadow uppercase">Comunicación feminista</h1>
             <!-- <p class="text-xl md:text-2xl mb-8">Tu descripción inspiradora aquí</p>
             <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                 ¡Descubre más!
@@ -30,25 +29,53 @@ import Contact from '../components/Contact.astro';
             <p>Somos una organización dedicada a la comunicación feminista, utilizando el periodismo noviolento como nuestra guía editorial para todas las producciones audiovisuales que realizamos. Somos un colectivo formado por mujeres, disidencias y niñeces, y llevamos a cabo un programa mensual que refleja nuestro propósito y compromiso con la transformación social y personal.</p>
             <p>Nuestro modelo de organización es horizontal, con roles rotativos que fomentan la participación equitativa y la colaboración. Creemos profundamente en la autoformación como herramienta de empoderamiento, lo que nos ha llevado a crear la Escuela de Comunicación Feminista, un espacio de aprendizaje que se realiza anualmente. Somos autogestionadas, lo que significa que construimos y sostenemos nuestro proyecto desde la autonomía y la colectividad.</p>
         </div>
-        <div class="my-4 w-full h-24 bg-contain bg-center bg-repeat" style={{
-            backgroundImage: 'url(/enredadera_morada.png)',
-            }}></div>
     </section>
     <section transition:animate="slide" class="container mx-auto px-4  my-16 md:mb-4">
-        <h1 class="text-4xl mb-12">En enero partimos la Escuela de Comunicación Feminista</h1>
-        <div class="flex flex-col space-y-4 items-center lg:flex-col text-xl ">
-            <img class="flex-1 object-contain" src="/1.png" alt="">
-            <img class="flex-1 object-contain" src="/2.png" alt="">
-        </div>
-        <div class="flex justify-center mt-12">
-            <p class="text-4xl t-stroke t-shadow uppercase ">¡Te esperamos!</p>
-        </div>
+    
         <div class="mt-12 w-full  h-24 lg:h-96 bg-cover bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
             }}></div>
     </section>
 
-    <Contact />
+    <section class="mt-24">
+        <div class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat"
+            style={{
+            backgroundImage: 'url(/portadas/Portada_periodismo.png)',
+            }}
+        >
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-4xl md:text-7xl mb-4 t-stroke t-shadow uppercase">Periodismo No Violento</h1>
+            <!-- <p class="text-xl md:text-2xl mb-8">Tu descripción inspiradora aquí</p>
+            <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                ¡Descubre más!
+            </button> -->
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto px-4 m-6 md:mb-4">
+        <div class="w-full h-24 bg-contain bg-center bg-repeat" style={{
+            backgroundImage: 'url(/enredadera_morada.png)',
+            }}></div>
+        <h1 class="text-4xl mb-6">Qué es el Periodismo Noviolento</h1>
+        <div class="flex flex-col md:flex-row text-xl space-y-4 md:space-y-0">
+            <div class="flex flex-col md:w-1/2 space-y-4 p-4"> 
+                <p>El periodismo noviolento busca transformar la narrativa predominante en los medios de comunicación, que con frecuencia priorizan el espectáculo de la violencia. En contraste, este enfoque se centra en visibilizar noticias ejemplares y no violentas, promoviendo posibilidades de un mundo digno para todas las personas.</p>
+                <p>Todo periodismo, aunque aspire a la objetividad, está construido sobre un punto de vista. El periodismo no violento adopta una perspectiva que identifica, dentro de los sucesos globales, nacionales y locales, aquellos que abren nuevos caminos para la humanidad, rompiendo con las estructuras de la violencia. Este enfoque filtra los hechos para destacar acontecimientos que posibilitan otras realidades y alternativas.</p>
+                <p>Aurora Marquina Espinosa, en su libro Contribuciones para una educación no violenta, subraya la importancia de desarrollar una visión no ingenua de la realidad. Esto implica aprender a observar desde diferentes puntos de vista y entender cómo las condiciones internas y externas de quien mira influyen en su percepción de la realidad.</p>
+            </div>
+            <div class="flex flex-col md:w-1/2 space-y-4 mt-6 md:mt-0 p-4">
+                <p>El objetivo del periodismo noviolento es dar visibilidad a hechos, personas y organizaciones que representan formas de vida, acciones y luchas que rechazan la espiral de la violencia. Este enfoque también resalta nuevas formas de economía basadas en la solidaridad y la inclusión. Busca noticias relacionadas con la resolución de conflictos, la paz mundial y denuncia constantemente aquello que genera dolor y sufrimiento en el mundo.</p>
+                <p>El periodismo no violento amplifica las voces que promueven la igualdad, la paridad, las acciones inclusivas y la sostenibilidad. A través de sus narrativas, impulsa transformaciones hacia una realidad libre de opresión y de los múltiples rostros de la violencia, contribuyendo a la construcción de un futuro más justo y humano.</p>
+            </div>
+        </div>
+
+
+        <div class="mt-12 w-full  h-24 lg:h-96 bg-cover bg-center bg-repeat" style={{
+            backgroundImage: 'url(/enredadera_morada.png)',
+            }}></div>
+    </section>
+
 
 </Layout>
 

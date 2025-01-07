@@ -1,18 +1,22 @@
 ---
 let links = [
-    {title: 'Home', url: '/'},
+    {title: 'Inicio', url: '/'},
     {title: 'Comunicación Feminista', url: '/comunicacion-feminista'},
-    {title: 'Periodismo Noviolento', url: '/periodismo-no-violento'},
     {title: 'Programas', url: '/programas'},
     {title: 'Cápsulas', url: '/capsulas'},
     {title: 'Anillo de la abundancia', url: '/anillo-de-la-abundancia'},
+    {title: 'Contacto', url: '/contacto'},
 ]
 ---
 
 <header class="flex justify-between text-white items-center p-4 text-black custom-shadow ">
     <a href="/" class="flex items-center">
       <img src="/logo/logo_blanco.png" alt="Logo" class="h-10 w-10 md:h-20 md:w-20 mr-2">
-      <h1 class="text-xl lg:text-4xl font-bold">Mandrágorastv</h1>
+      <div>
+        <h1 class="title text-xl lg:text-4xl font-bold">Mandrágorastv</h1>
+        <span class="text-xs lg:text-base">Un programa hecho por mujeres, disidencias y niñeces</span>
+      </div>
+      
     </a>
     <div class="flex items-center">
         <div class="social-icons flex items-center hidden mx-7 md:flex">
@@ -24,7 +28,7 @@ let links = [
             </a>	
         </div>
         <button class="block " id="menu-button" >
-            <img width="50" src="/nav-icon.png" alt="">
+            <img width="30" src="/nav-icon.png" alt="">
         </button>
     </div>
     <div id="mySidenav" class="sidenav flex flex-col  justify-around ">
@@ -51,6 +55,7 @@ let links = [
 
  
 <style>
+
 .sidenav-logo {
     display: flex;
     flex-direction: column;
@@ -72,6 +77,11 @@ let links = [
 .custom-shadow {
     box-shadow: 0 15px 12px rgba(0, 0, 0, 0.4);
 }
-	
+@media (min-width: 768px) {
+  .sidenav a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
 	
 </style>

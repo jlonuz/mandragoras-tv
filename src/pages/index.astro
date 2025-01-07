@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Contact from '../components/Contact.astro';
 
 ---
 
 <Layout title="MandrágorasTv | Bienvenide a nuestro sitio web">
 
 	<section class="mt-24">
+
         <div class="relative w-fullaspect-w-16 aspect-h-9 " style="aspect-ratio: 16 / 9"> 
             <iframe 
                 class="absolute top-0 left-0 w-full h-full" 
@@ -17,20 +17,6 @@ import Contact from '../components/Contact.astro';
             </iframe>
         </div>
     </section>
-	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
-		style={{
-			backgroundImage: 'url(/portadas/portada_tv.png)',
-		}}
-	>
-		<a href="https://www.youtube.com/@mandragorastv" target="_blank">
-			<div class="absolute inset-0 bg-black opacity-20"></div>
-			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Sintoniza nuestro canal</h1>
-			</div>
-		</a>
-		
-	</section>
 
 	<section
 		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
@@ -39,21 +25,22 @@ import Contact from '../components/Contact.astro';
 		}}
 	>
 		<a href="/comunicacion-feminista">
-			<div class="absolute inset-0 bg-black opacity-20"></div>
+			<div class="absolute inset-0 bg-black opacity-30"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl font-bold md:text-5xl mb-4  p-4 t-stroke t-shadow uppercase">Comunicación feminista</h1>
+				<h1 class="title-portada text-5xl tracking-widest font-bold md:text-8xl p-4 t-stroke t-shadow uppercase">Comunicación feminista</h1>
 			</div></a>
 	</section>
+
 	<section
-		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
-		style={{
-			backgroundImage: 'url(/portadas/Portada_periodismo.png)',
-		}}
+	class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
+	style={{
+		backgroundImage: 'url(/tvrojo_sinlogo.png)',
+	}}
 	>
-		<a href="/periodismo-no-violento">
-			<div class="absolute inset-0 bg-black opacity-20"></div>
+		<a href="/programas" target="_blank">
+			<div class="absolute inset-0 bg-black opacity-30"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Periodismo noviolento</h1>
+				<h1 class="title-portada text-5xl tracking-widest font-bold md:text-8xl p-4 t-stroke t-shadow uppercase">Programas</h1>
 			</div>
 		</a>
 		
@@ -65,18 +52,29 @@ import Contact from '../components/Contact.astro';
 		}}
 	>
 		<a href="/anillo-de-la-abundancia">
-			<div class="absolute inset-0 bg-black opacity-20"></div>
+			<div class="absolute inset-0 bg-black opacity-30"></div>
 			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-				<h1 class="text-4xl font-bold md:text-5xl mb-4 p-4 t-stroke t-shadow uppercase">Anillo de la abundancia</h1>
+				<h1 class="title-portada text-5xl tracking-widest font-bold md:text-8xl p-4 t-stroke t-shadow uppercase">Anillo de la abundancia</h1>
 			</div></a>
 	</section>
 
-	<Contact />
+	<section
+		class="relative w-full h-96 lg:h-96 xl:h-80 bg-cover bg-center bg-no-repeat portada"
+		style={{
+			backgroundImage: 'url(/portadas/portada_contacto.png)',
+		}}
+	>
+		<a href="/anillo-de-la-abundancia">
+			<div class="absolute inset-0 bg-black opacity-30"></div>
+			<div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+				<h1 class="title-portada text-5xl tracking-widest font-bold md:text-8xl p-4 t-stroke t-shadow uppercase">Contacto</h1>
+			</div></a>
+	</section>
 
 
 </Layout>
 
-<!-- <style>
+<style>
 	.portada:hover {
 		-webkit-transform:scale(1.2);
 		transform:scale(1.2);
@@ -88,5 +86,5 @@ import Contact from '../components/Contact.astro';
 	}
 
 	
-</style> -->
+</style>
 

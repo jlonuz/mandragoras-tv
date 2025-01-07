@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KGLetitHappen';
+    src: url('/fonts/KGLetitHappen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +33,11 @@ header {
     z-index: 99;
     
 }
+
+.title-portada {
+    font-family: 'KGLetitHappen';
+}
+
 .social-icons {
     a { 
         padding-left: 10px;
@@ -75,8 +87,6 @@ header {
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
-    -webkit-transform:scale(1.2);
-	transform:scale(1.2);
   }
   
   /* Position and style the close button (top right corner) */
@@ -94,3 +104,5 @@ header {
     margin-top: 16px;
     /* padding: 20px; */
   }
+
+ 
