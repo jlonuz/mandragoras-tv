@@ -106,7 +106,7 @@ header {
   }
 
   @media (min-width: 768px) {
-    .sidenav a:hover {
+    .sidenav a.nav-links:hover {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
     }

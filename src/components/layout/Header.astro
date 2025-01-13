@@ -31,15 +31,15 @@ let links = [
             <img width="30" src="/nav-icon.png" alt="">
         </button>
     </div>
-    <div id="mySidenav" class="sidenav flex flex-col  justify-around ">
+    <div id="mySidenav" class="sidenav flex flex-col ">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
         <a href="/" class="sidenav-logo">
             <img src="/logo/logo_morado.png" alt="Logo" class=" w-1/2 md:w-96 mr-2">
-            <p class="tracking-widest text-xs lg:text-base w-72 text-white text-center">Un programa hecho por mujeres, disidencias y niñeces</p>
+            <p class="tracking-widest text-xs lg:text-base w-72 text-white text-center mb-12">Un programa hecho por mujeres, disidencias y niñeces</p>
         </a>
-        <ul class="flex flex-col justify-center items-center space-y-4">
+        <ul class="flex flex-col justify-center items-center space-y-4 mb-12">
             {links.map(({title, url}) => (
-            <li class="p-2"><a href={url} class="hover:text-gray-400 text-sm lg:text-2xl t-stroke t-shadow uppercase ">{title}</a></li>
+            <li class="p-2"><a href={url} class="nav-links hover:text-gray-400 text-sm lg:text-2xl t-stroke t-shadow uppercase ">{title}</a></li>
             ))}
         </ul> 
         <div class="social-icons flex justify-center items-center mx-7 md:flex">
