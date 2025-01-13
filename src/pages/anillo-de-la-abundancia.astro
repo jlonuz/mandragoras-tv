@@ -1,5 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+let colaboraciones = [
+    {title: 'Centro Cultural Comunitario Espacio Ailanto', url: 'https://www.ailanto.cl/', imgSrc: "/abundancia_logos/ailanto2.png"},
+    {title: 'Asociación Nacional de Medios Independientes y Comunitarios ANAMIC', url: 'https://anamic.cl/', imgSrc: '/abundancia_logos/anamic_2.png'},
+    {title: 'Fondo Alquimia', url: 'https://www.fondoalquimia.cl/', imgSrc: "/abundancia_logos/fondo_alquimia.png"},
+    {title: 'Disquería Chilena', url: 'https://disqueriachilena.cl/', imgSrc: "/abundancia_logos/disqueria_chilena.jpeg"},
+    {title: 'Centro Cultural Comunitario Casa Rota', url: 'https://www.instagram.com/__cccr/', imgSrc: "/abundancia_logos/casa_rota.png"},
+]
 ---
 
 <Layout title="MandrágorasTv | Comunicación Feminista">
@@ -20,28 +28,34 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
     <section class="container mx-auto mt-6 px-4 md:mb-4">
-        <div class="w-full h-24 bg-contain bg-center bg-repeat" style={{
-            backgroundImage: 'url(/enredadera_morada.png)',
-            }}></div>
-        <h1 class="text-4xl mb-6">Abundancia</h1>
        
-        <div class="flex flex-col md:flex-row text-xl space-y-4 md:space-y-0 md:space-x-7">
-            <p>En Mandrágorastv creemos que la colaboración y el apoyo colectivo son fundamentales para construir un proyecto sustentable y transformador. A lo largo de los años, hemos tejido una red de alianzas y colaboraciones que han fortalecido nuestra visión de una comunicación feminista y noviolenta.</p>
-            <p>Fuimos parte de la fundación de la Asociación Nacional de Medios Independientes y Comunitarios ANAMIC, una iniciativa que impulsa y articula proyectos comunicacionales con perspectiva social y comunitaria en todo Chile. También contamos con la colaboración de espacios como el Centro Cultural Comunitario Espacio Ailanto, la Disquería Chilena y el Centro Cultural Comunitario Casa Rota, quienes han aportado a nuestra labor desde el complot creativo. </p>
-            
-        </div>
-        <div class="flex flex-col md:flex-row text-xl space-y-4 md:space-y-0 md:space-x-7 mt-6">
+        <h1 class="text-4xl mb-6">Abundancia</h1>
+
+        <div class="flex flex-col md:flex-col text-xl md:space-y-0">
+            <p>En Mandrágorastv creemos que la colaboración y el apoyo colectivo son fundamentales para construir un proyecto sustentable y transformador. A lo largo de los años, hemos tejido una red de alianzas y colaboraciones que han fortalecido nuestra visión de una comunicación feminista y noviolenta.</p><br>
+            <p>Fuimos parte de la fundación de la Asociación Nacional de Medios Independientes y Comunitarios ANAMIC, una iniciativa que impulsa y articula proyectos comunicacionales con perspectiva social y comunitaria en todo Chile. También contamos con la colaboración de espacios como el Centro Cultural Comunitario Espacio Ailanto, la Disquería Chilena y el Centro Cultural Comunitario Casa Rota, quienes han aportado a nuestra labor desde el complot creativo. </p><br>
             <p>Este año, nos sentimos honradas de haber recibido el apoyo del Fondo Alquimia, un reconocimiento que refuerza nuestro compromiso de seguir creando contenido feminista.</p>
-            <p>Si te interesa apoyar nuestro proyecto, te invitamos a unirte a esta red de abundancia. </p>
         </div>
-        <div class="flex flex-col md:flex-row text-xl space-y-4 md:space-y-0 md:space-x-7 mt-6">
-            <p>Puedes colaborar de diversas maneras: ofreciendo recursos, compartiendo tu experiencia, o simplemente ayudándonos a difundir nuestra labor. Escríbenos a nuestro contacto y sé parte de este movimiento por una comunicación feminista y noviolenta.</p>
+        <div class="flex flex-col md:flex-col text-xl md:space-y-0  mt-6">
+            
+            <p>Si te interesa apoyar nuestro proyecto, te invitamos a unirte a esta red de abundancia. </p><br>
+            <p>Puedes colaborar de diversas maneras: ofreciendo recursos, compartiendo tu experiencia, o simplemente ayudándonos a difundir nuestra labor. Escríbenos a nuestro contacto y sé parte de este movimiento por una comunicación feminista y noviolenta.</p><br>
             <p>En Mandrágorastv, sabemos que la abundancia no solo se mide en recursos materiales, sino en las conexiones, la solidaridad y el compromiso colectivo de quienes sueñan con un mundo diferente. Te esperamos para seguir creciendo juntas.</p>
 
         </div>
-        <div class="mt-12 w-full  h-24 lg:h-96 bg-cover bg-center bg-repeat" style={{
+        <div class="my-12 w-auto  h-24 lg:h-72 bg-cover bg-center bg-repeat" style={{
             backgroundImage: 'url(/enredadera_morada.png)',
-            }}></div>
+            }}>
+        </div>
+        <h1 class="text-4xl mb-6 text-center">Colaboraciones</h1>
+        <div class="grid grid-cols-1 md:gap-8 md:grid-cols-3 justify-items-center lg:grid-cols-5 gap-4 my-8">
+            {colaboraciones.map(({title, url, imgSrc}) => ( 
+                <a href={url} target="_blank" class="w-40 md:w-60 my-4 block max-w-xs">
+                    <img src={imgSrc} alt={title} class="w-full h-auto " />
+                    {/* <p>{title}</p> */}
+                </a>
+            ))}
+        </div>
     </section>
 
 
