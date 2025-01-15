@@ -62,7 +62,7 @@ header {
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
+    height: 100vh; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -70,13 +70,13 @@ header {
     right: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 15px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
   
   /* The navigation menu links */
   .sidenav a.nav-links {
-    padding: 10px 5px;
+    padding: 5px;
     text-decoration: none;
     /* font-size: 25px; */
     color: #fff;
@@ -88,7 +88,7 @@ header {
   .sidenav a.nav-links:hover {
     color: #f1f1f1;
     background-color: #3F0071;
-    padding: 10px;
+    padding: 5px;
   }
   
   /* Position and style the close button (top right corner) */
@@ -96,7 +96,7 @@ header {
     position: absolute;
     top: 0;
     right: 20px;
-    font-size: 73px;
+    font-size: 53px;
     margin-left: 50px;
   }
   

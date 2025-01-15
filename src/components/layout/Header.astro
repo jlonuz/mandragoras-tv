@@ -11,9 +11,9 @@ let links = [
 
 <header class="flex justify-between text-white items-center p-4 text-black custom-shadow ">
     <a href="/" class="flex items-center">
-      <img src="/logo/logo_blanco.png" alt="Logo" class="h-14 w-14 md:h-20 md:w-20 mr-2">
+      <img src="/logo/logo_blanco.png" alt="Logo" class="h-10 w-10 md:h-14 md:w-14 mr-2">
       <div>
-        <h1 class="title text-xl lg:text-4xl font-bold">Mandrágorastv</h1>
+        <h1 class="title text-xl lg:text-2xl font-bold">Mandrágorastv</h1>
         <p class="tracking-wide text-xs lg:text-base">Un programa hecho por mujeres, disidencias y niñeces</p>
       </div>
       
@@ -31,15 +31,15 @@ let links = [
             <img width="30" src="/nav-icon.png" alt="">
         </button>
     </div>
-    <div id="mySidenav" class="sidenav flex flex-col ">
+    <div id="mySidenav" class="sidenav flex flex-col justify-center items-center">
         <a href="javascript:void(0)" class="closebtn">&times;</a>
         <a href="/" class="sidenav-logo">
-            <img src="/logo/logo_morado.png" alt="Logo" class=" w-1/2 md:w-96 mr-2">
-            <p class="tracking-widest text-xs lg:text-xl w-96 text-white text-center mb-4">Un programa hecho por mujeres, disidencias y niñeces</p>
+            <img src="/logo/logo_morado.png" alt="Logo" class=" md:w-72 mr-2">
+            <p class="tracking-widest text-xs lg:text-base w-96 text-white text-center mb-4">Un programa hecho por mujeres, disidencias y niñeces</p>
         </a>
         <ul class="flex flex-col justify-center items-center mb-12">
             {links.map(({title, url}) => (
-            <li class="p-2"><a href={url} class="nav-links text-white t-shadow uppercase text-sm lg:text-2xl  ">{title}</a></li>
+            <li class="p-2"><a href={url} class="nav-links text-white t-shadow uppercase text-sm lg:text-xl  ">{title}</a></li>
             ))}
         </ul> 
         <div class="social-icons flex justify-center items-center mx-7 md:flex">
