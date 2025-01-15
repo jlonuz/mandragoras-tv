@@ -7,7 +7,7 @@ document.addEventListener('astro:page-load', function() {
         console.log('click');
         nav.style.width = '100%';
         main.style.marginRights = '250px';
-        body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+        body.style.backgroundColor = 'black';
     });
 
     document.querySelector('.closebtn').addEventListener('click', () => {
