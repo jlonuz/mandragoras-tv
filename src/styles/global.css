@@ -50,7 +50,7 @@ header {
     -moz-text-stroke-width: 2px;
     -webkit-text-stroke-width: 2px;
     -moz-text-stroke-color: #000000;
-    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-color: #3c0569;
 }
   
 .t-shadow {
@@ -75,18 +75,20 @@ header {
   }
   
   /* The navigation menu links */
-  .sidenav a {
-    /* padding: 8px 8px 8px 32px; */
+  .sidenav a.nav-links {
+    padding: 10px 5px;
     text-decoration: none;
     /* font-size: 25px; */
-    color: #818181;
+    color: #fff;
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  .sidenav a.nav-links:hover {
     color: #f1f1f1;
+    background-color: #3F0071;
+    padding: 10px;
   }
   
   /* Position and style the close button (top right corner) */
