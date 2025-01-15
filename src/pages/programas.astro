@@ -79,9 +79,10 @@ const videos = [
             ))}
           </div> -->
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {videos.map(video => (
-                <div class=" w-full h-64 md:h-80">
+        <p class="p-2 text-2xl text-white bg-purple-900 inline mb-8">Primera temporada</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+            {videos.slice(0,4).map(video => (
+                <div class=" w-full h-64 md:h-96 mb-12">
                     <iframe
                     id="video-iframe"
                     class="w-full h-full"
@@ -90,13 +91,26 @@ const videos = [
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                     ></iframe>
-                {/* <button data-url={video.url} class="w-full h-full">
-                    <img src={video.thumbnail} alt={video.title} class="w-full h-full object-cover rounded-lg shadow-lg" />
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                    <h2 class="text-white text-xl font-bold">{video.title}</h2>
-                    </div>
-                </button> */}
+                    <h2 class="program-date text-white text-xl font-bold">{video.title}</h2>
                 </div>
+                
+            ))}
+        </div>
+        <p class="p-2 text-2xl text-white bg-purple-900 inline mb-8">Segunda temporada</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+            {videos.slice(4,9).map(video => (
+                <div class=" w-full h-64 md:h-96 mb-12">
+                    <iframe
+                    id="video-iframe"
+                    class="w-full h-full"
+                    src={video.url}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    ></iframe>
+                    <h2 class="program-date text-white text-xl font-bold">{video.title}</h2>
+                </div>
+                
             ))}
         </div>
     </section>
@@ -104,4 +118,13 @@ const videos = [
 
 </Layout>
 
+<style>
+    .program-date::before {
+        content: '';
+        width: 60%;
+        height: 2px;
+        background-color: purple;
+        display: block;
+    }
+</style>
 
