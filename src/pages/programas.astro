@@ -4,40 +4,40 @@ import Layout from '../layouts/Layout.astro';
 
 const videos = [
     // Primera temporada
-    { title: '#4 - 27 sept 2021', url: 'https://www.youtube.com/embed/_s6f8jVOWWA?si=W4HLzKyC6DYFenBD', thumbnail: '/portadas/Portada_Colaboraciones.png' },
-    { title: '#3 - 6 sept 2021 ', url: 'https://www.youtube.com/embed/Rp_tiuYMFX8?si=Yu25N0Z2jxZThlIs', thumbnail: '/portadas/Portada_Abundancia.png' },
-    { title: '#2 - 9 ago 2021', url: 'https://www.youtube.com/embed/wokcezrvteM?si=LcAL7aBxJMVZ2mA0', thumbnail: '/portadas/portada_contacto.png' },
-    { title: '#1 - 28 jun 2021', url: 'https://www.youtube.com/embed/Ex_1jomK_Ks?si=3VADkpJHq-DhddAM', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#4 • 27 septiembre 2021', url: 'https://www.youtube.com/embed/_s6f8jVOWWA?si=W4HLzKyC6DYFenBD', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    { title: '#3 • 6 septiembre 2021 ', url: 'https://www.youtube.com/embed/Rp_tiuYMFX8?si=Yu25N0Z2jxZThlIs', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#2 • 9 agosto 2021', url: 'https://www.youtube.com/embed/wokcezrvteM?si=LcAL7aBxJMVZ2mA0', thumbnail: '/portadas/portada_contacto.png' },
+    { title: '#1 • 28 junio 2021', url: 'https://www.youtube.com/embed/Ex_1jomK_Ks?si=3VADkpJHq-DhddAM', thumbnail: '/tvrojo_sinlogo.png' },
     // Segunda Temporada
-    { title: '#9 - 14 dic 2022', url: 'https://www.youtube.com/embed/BUjs5Br99lY?si=iiq-Qdta2R-DBmq-', thumbnail: '/portadas/Portada_Escuela.png' },
-    { title: '#8 - 28 oct 2022', url: 'https://www.youtube.com/embed/LBSpVAHE6DM?si=KyMA30gfFNz-Fa8Z', thumbnail:  '/portadas/Portada_Abundancia.png'},
-    { title: '#7 - 2 oct 2022', url: 'https://www.youtube.com/embed/h3ojoZ3ozqc?si=_GUkx_pWT2nOK73t', thumbnail: '/tvrojo_sinlogo.png' },
-    { title: '#6 - 2 sept 2022', url: 'https://www.youtube.com/embed/wVmPwn3G0AY?si=KK4diKNLF_byLTgk', thumbnail: '/portadas/portada_contacto.png' },
-    { title: '#5 - 15 mar 2022', url: 'https://www.youtube.com/embed/HUEL1sCW7wk?si=WWuzzhqeCPZFUzQz', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#9 • 14 diciembre 2022', url: 'https://www.youtube.com/embed/BUjs5Br99lY?si=iiq-Qdta2R-DBmq-', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#8 • 28 octubre 2022', url: 'https://www.youtube.com/embed/LBSpVAHE6DM?si=KyMA30gfFNz-Fa8Z', thumbnail:  '/portadas/Portada_Abundancia.png'},
+    { title: '#7 • 2 octubre 2022', url: 'https://www.youtube.com/embed/h3ojoZ3ozqc?si=_GUkx_pWT2nOK73t', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#6 • 2 septiembre 2022', url: 'https://www.youtube.com/embed/wVmPwn3G0AY?si=KK4diKNLF_byLTgk', thumbnail: '/portadas/portada_contacto.png' },
+    { title: '#5 • 15 marzo 2022', url: 'https://www.youtube.com/embed/HUEL1sCW7wk?si=WWuzzhqeCPZFUzQz', thumbnail: '/tvrojo_sinlogo.png' },
     // Tercera Temporada
-    { title: '#21 - 28 dic 2023', url: 'https://www.youtube.com/embed/z_HnWm0S6nA?si=HyartOn703wvNxo2', thumbnail: '/logo/logo.png' },
-    { title: '#20 - 30 nov 2023', url: 'https://www.youtube.com/embed/OJhy8rTjmMw?si=GRWop_s1VdFulm6x', thumbnail: '/portadas/portada_tv.png' },
-    { title: '#19 - 26 oct 2023', url: 'https://www.youtube.com/embed/X65hH0LZMRE?si=p6XHbyG7VevixIoO', thumbnail: '/portadas/Portada_Abundancia.png'},
-    { title: '#18 - 28 sept 2023', url: 'https://www.youtube.com/embed/nnSeNkbGbBA?si=fBkP5w9ptMdANtHF', thumbnail: '/mandragoras_banner.png' },
-    { title: '#17 - 31 ago 2023', url: 'https://www.youtube.com/embed/CQOFLhRYfbk?si=G0HvJ0gAKPhRU9yT', thumbnail: '/portadas/Portada_Abundancia.png' },
-    { title: '#16 - 27 jul 2023', url: 'https://www.youtube.com/embed/0vyHiGum_Js?si=FnncVuRQkPFJUo8e', thumbnail: '/header.jpg' },
-    { title: '#15 - 29 jun 2023', url: 'https://www.youtube.com/embed/2ewXuG3XxwE?si=7n7Hzd1ohX5KiKjJ', thumbnail: '/1.png' },
-    { title: '#14 - 25 may 2023', url: 'https://www.youtube.com/embed/TU20pWyWu_0?si=kcLwo2kTZOih_l5a', thumbnail: '/tvrojo_sinlogo.png' },
-    { title: '#13 - 21 abr 2023', url: 'https://www.youtube.com/embed/XMHQKy0SIzM?si=lUnO3AWqCBe8C4Cv', thumbnail: '/portadas/Portada_periodismo.png' },
-    { title: '#12 - 15 mar 2023', url: 'https://www.youtube.com/embed/GkmyQWzXVy0?si=VaANiviWJQdUoEdo', thumbnail: '/tvrojo_sinlogo.png' },
-    { title: '#11 - 9 feb 2023', url: 'https://www.youtube.com/embed/EJ5fl4xN5Qs?si=fi47Ha9r5kQRuhx-', thumbnail: '/portadas/Portada_Escuela.png' },
-    { title: '#10 - 14 ene 2023', url: 'https://www.youtube.com/embed/QXOdbtvpPfA?si=wSg7rWJ_nMzZLuZw', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    { title: '#21 • 28 diciembre 2023', url: 'https://www.youtube.com/embed/z_HnWm0S6nA?si=HyartOn703wvNxo2', thumbnail: '/logo/logo.png' },
+    { title: '#20 • 30 noviembre 2023', url: 'https://www.youtube.com/embed/OJhy8rTjmMw?si=GRWop_s1VdFulm6x', thumbnail: '/portadas/portada_tv.png' },
+    { title: '#19 • 26 octubre 2023', url: 'https://www.youtube.com/embed/X65hH0LZMRE?si=p6XHbyG7VevixIoO', thumbnail: '/portadas/Portada_Abundancia.png'},
+    { title: '#18 • 28 septiembre 2023', url: 'https://www.youtube.com/embed/nnSeNkbGbBA?si=fBkP5w9ptMdANtHF', thumbnail: '/mandragoras_banner.png' },
+    { title: '#17 • 31 agosto 2023', url: 'https://www.youtube.com/embed/CQOFLhRYfbk?si=G0HvJ0gAKPhRU9yT', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#16 • 27 julio 2023', url: 'https://www.youtube.com/embed/0vyHiGum_Js?si=FnncVuRQkPFJUo8e', thumbnail: '/header.jpg' },
+    { title: '#15 • 29 junio 2023', url: 'https://www.youtube.com/embed/2ewXuG3XxwE?si=7n7Hzd1ohX5KiKjJ', thumbnail: '/1.png' },
+    { title: '#14 • 25 mayo 2023', url: 'https://www.youtube.com/embed/TU20pWyWu_0?si=kcLwo2kTZOih_l5a', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#13 • 21 abril 2023', url: 'https://www.youtube.com/embed/XMHQKy0SIzM?si=lUnO3AWqCBe8C4Cv', thumbnail: '/portadas/Portada_periodismo.png' },
+    { title: '#12 • 15 marzo 2023', url: 'https://www.youtube.com/embed/GkmyQWzXVy0?si=VaANiviWJQdUoEdo', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#11 • 9 febrero 2023', url: 'https://www.youtube.com/embed/EJ5fl4xN5Qs?si=fi47Ha9r5kQRuhx-', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#10 • 14 enero 2023', url: 'https://www.youtube.com/embed/QXOdbtvpPfA?si=wSg7rWJ_nMzZLuZw', thumbnail: '/portadas/Portada_Colaboraciones.png' },
     // 4ta temporada
-    { title: '#31 - 27 dic 2024', url: 'https://www.youtube.com/embed/2ZUq5p3otoc?si=F2P3Uh9_520Qn_Kp', thumbnail: '/portadas/portada_tv.png' },
-    { title: '#30 - 28 nov 2024', url: 'https://www.youtube.com/embed/F5PnIrNeQN0?si=5SuCzNDsxLlys6w5', thumbnail: '/portadas/Portada_periodismo.png' },
-    { title: '#29 - 27 oct 2024', url: 'https://www.youtube.com/embed/2uyeao0nh58?si=k78DWspCovRtHc9K', thumbnail: '/portadas/Portada_Escuela.png' },
-    { title: '#28 - 29 sept 2024', url: 'https://www.youtube.com/embed/a1OEVfcYsyw?si=n-PYQ52tO9rNz3vD', thumbnail: '/portadas/Portada_Abundancia.png' },
-    { title: '#27 - 25 ago 2024', url: 'https://www.youtube.com/embed/ln9djMwBYP8?si=Rz4MA-rQjbwtkJ3g', thumbnail: '/tvrojo_sinlogo.png' },
-    { title: '#26 - 31 jul 2024', url: 'https://www.youtube.com/embed/S_i43kPjZdY?si=U45JRbu4Bf6bpzNO', thumbnail: '/portadas/Portada_Colaboraciones.png' },
-    { title: '#25 - 30 jun 2024', url: 'https://www.youtube.com/embed/lLl8y1dZI8A?si=KQs67mLY29VBMcbN', thumbnail: '/logo/logo_blanco.png' },
-    { title: '#24 - 30 may 2024', url: 'https://www.youtube.com/embed/d7nNyrmLTOk?si=PGdLd6ezjmM4AxrT', thumbnail: '/portadas/Portada_Abundancia.png' },
-    { title: '#23 - 25 abr 2024', url: 'https://www.youtube.com/embed/x-hdQErjAoE?si=CqHqk7cmn5JJXTTG', thumbnail: '/mandragoras_banner.png' },
-    { title: '#22 - 28 mar 2024', url: 'https://www.youtube.com/embed/wgtB9rrJvJM?si=05hDno6vs_wisfVY', thumbnail: '/2.png' },
+    { title: '#31 • 27 diciembre 2024', url: 'https://www.youtube.com/embed/2ZUq5p3otoc?si=F2P3Uh9_520Qn_Kp', thumbnail: '/portadas/portada_tv.png' },
+    { title: '#30 • 28 noviembre 2024', url: 'https://www.youtube.com/embed/F5PnIrNeQN0?si=5SuCzNDsxLlys6w5', thumbnail: '/portadas/Portada_periodismo.png' },
+    { title: '#29 • 27 octubre 2024', url: 'https://www.youtube.com/embed/2uyeao0nh58?si=k78DWspCovRtHc9K', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#28 • 29 septiembre 2024', url: 'https://www.youtube.com/embed/a1OEVfcYsyw?si=n-PYQ52tO9rNz3vD', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#27 • 25 agosto 2024', url: 'https://www.youtube.com/embed/ln9djMwBYP8?si=Rz4MA-rQjbwtkJ3g', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#26 • 31 julio 2024', url: 'https://www.youtube.com/embed/S_i43kPjZdY?si=U45JRbu4Bf6bpzNO', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    { title: '#25 • 30 junio 2024', url: 'https://www.youtube.com/embed/lLl8y1dZI8A?si=KQs67mLY29VBMcbN', thumbnail: '/logo/logo_blanco.png' },
+    { title: '#24 • 30 mayo 2024', url: 'https://www.youtube.com/embed/d7nNyrmLTOk?si=PGdLd6ezjmM4AxrT', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#23 • 25 abril 2024', url: 'https://www.youtube.com/embed/x-hdQErjAoE?si=CqHqk7cmn5JJXTTG', thumbnail: '/mandragoras_banner.png' },
+    { title: '#22 • 28 marzo 2024', url: 'https://www.youtube.com/embed/wgtB9rrJvJM?si=05hDno6vs_wisfVY', thumbnail: '/2.png' },
 ];
 
 
@@ -66,9 +66,11 @@ const videos = [
             <h1 class="text-2xl md:text-4xl my-4 md:my-12">MandrágorasTV -  Programas</h1>
             <a class="bg-green-700 hover:bg-purple-900 transition p-2 rounded flex items-center text-base" href="https://www.youtube.com/@mandragorastv">Explora nuestro canal <img class="mx-2" width="30" src="/youtube-icon.png" alt=""></a>
         </div>
-        <!-- <div class="flex flex-col md:flex-row items-center">
-            <h2 class="w-full md:w-1/3 text-white text-xl md:text-4xl my-4 text-purple-700">Sintoniza nuestra última programa</h2>
-            <div class="w-full md:w-2/3 h-64 md:h-96 mb-12">
+        <div class="flex flex-col md:flex-row items-center bg-green-700 rounded p-4 my-4">
+            <h2 class="w-full md:w-1/3 text-white text-xl md:text-4xl my-4 uppercase text-center title-portada">Sintoniza nuestra última programa
+            
+            <span class="block text-white text-xl my-4 ">#31 • 27 diciembre 2024</span></h2>
+            <div class="w-full md:w-2/3 h-64 md:h-96">
                 <iframe
                 id="video-iframe"
                 class="w-full h-full"
@@ -77,9 +79,10 @@ const videos = [
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
                 ></iframe>
+                
             </div>
 
-        </div> -->
+        </div>
         <div class="mt-12">
             <p class="p-2 text-sm md:text-2xl text-white bg-purple-900 inline mb-8">Cuarta temporada</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
@@ -93,7 +96,7 @@ const videos = [
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         ></iframe>
-                        <h2 class="program-date text-white text-xl font-bold my-4 ">{video.title}</h2>
+                        <h2 class="program-date text-white text-base font-bold my-4 ">{video.title}</h2>
                     </div>
                     
                 ))}
@@ -111,7 +114,7 @@ const videos = [
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         ></iframe>
-                        <h2 class="program-date text-white text-xl font-bold my-4 ">{video.title}</h2>
+                        <h2 class="program-date text-white text-base font-bold my-4 ">{video.title}</h2>
                     </div>
                     
                 ))}
@@ -129,7 +132,7 @@ const videos = [
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         ></iframe>
-                        <h2 class="program-date text-white text-xl font-bold my-4">{video.title}</h2>
+                        <h2 class="program-date text-white text-base font-bold my-4">{video.title}</h2>
                     </div>
                     
                 ))}
@@ -147,7 +150,7 @@ const videos = [
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen
                         ></iframe>
-                        <h2 class="program-date text-white text-xl font-bold">{video.title}</h2>
+                        <h2 class="program-date text-white text-base font-bold">{video.title}</h2>
                     </div>
                     
                 ))}
