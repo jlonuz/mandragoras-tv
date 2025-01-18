@@ -57,7 +57,9 @@ header {
     text-shadow: 7px 7px #3c0569;
 }
       
-
+.bg-color-program {
+  background-color: #3F0071;
+}
 
 
 /* The side navigation menu */
