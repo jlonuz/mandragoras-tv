@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 let colaboraciones = [
     {title: 'Centro Cultural Comunitario Espacio Ailanto', url: 'https://www.ailanto.cl/', imgSrc: "/abundancia_logos/ailanto2.png"},
     {title: 'Asociación Nacional de Medios Independientes y Comunitarios ANAMIC', url: 'https://anamic.cl/', imgSrc: '/abundancia_logos/anamic_2.png'},
-    {title: 'Fondo Alquimia', url: 'https://www.fondoalquimia.cl/', imgSrc: "/abundancia_logos/fondo_alquimia.png"},
+    {title: 'Fondo Alquimia', url: 'https://www.fondoalquimia.org/', imgSrc: "/abundancia_logos/fondo_alquimia.png"},
     {title: 'Disquería Chilena', url: 'https://disqueriachilena.cl/', imgSrc: "/abundancia_logos/disqueria_chilena.jpeg"},
     {title: 'Centro Cultural Comunitario Casa Rota', url: 'https://www.instagram.com/__cccr/', imgSrc: "/abundancia_logos/casa_rota.png"},
 ]
@@ -50,7 +50,7 @@ let colaboraciones = [
         <h1 class="text-4xl mb-6 text-center">Colaboraciones</h1>
         <div class="grid grid-cols-1 md:gap-8 md:grid-cols-3 justify-items-center lg:grid-cols-5 gap-4 my-8">
             {colaboraciones.map(({title, url, imgSrc}) => ( 
-                <a href={url} target="_blank" class="w-40 md:w-60 my-4 block max-w-xs">
+                <a href={url} target="_blank" class="w-40 my-4 block max-w-xs">
                     <img src={imgSrc} alt={title} class="w-full h-auto " />
                     {/* <p>{title}</p> */}
                 </a>
