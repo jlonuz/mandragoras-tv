@@ -1,42 +1,43 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+
 const videos = [
-  // Primera temporada
-  { title: '28 jun 2021', url: 'https://www.youtube.com/embed/Ex_1jomK_Ks?si=3VADkpJHq-DhddAM', thumbnail: '/tvrojo_sinlogo.png' },
-  { title: '9 ago 2021', url: 'https://www.youtube.com/embed/wokcezrvteM?si=LcAL7aBxJMVZ2mA0', thumbnail: '/portadas/portada_contacto.png' },
-  { title: '6 sept 2021 ', url: 'https://www.youtube.com/embed/Rp_tiuYMFX8?si=Yu25N0Z2jxZThlIs', thumbnail: '/portadas/Portada_Abundancia.png' },
-  { title: '27 sept 2021', url: 'https://www.youtube.com/embed/_s6f8jVOWWA?si=W4HLzKyC6DYFenBD', thumbnail: '/portadas/Portada_Colaboraciones.png' },
-  // Segunda Temporada
-  { title: '15 mar 2022', url: 'https://www.youtube.com/embed/HUEL1sCW7wk?si=WWuzzhqeCPZFUzQz', thumbnail: '/tvrojo_sinlogo.png' },
-  { title: '2 sept 2022', url: 'https://www.youtube.com/embed/wVmPwn3G0AY?si=KK4diKNLF_byLTgk', thumbnail: '/portadas/portada_contacto.png' },
-  { title: '2 oct 2022', url: 'https://www.youtube.com/embed/h3ojoZ3ozqc?si=_GUkx_pWT2nOK73t', thumbnail: '/tvrojo_sinlogo.png' },
-  { title: '28 oct 2022', url: 'https://www.youtube.com/embed/LBSpVAHE6DM?si=KyMA30gfFNz-Fa8Z', thumbnail:  '/portadas/Portada_Abundancia.png'},
-  { title: '14 dic 2022', url: 'https://www.youtube.com/embed/BUjs5Br99lY?si=iiq-Qdta2R-DBmq-', thumbnail: '/portadas/Portada_Escuela.png' },
-  // Tercera Temporada
-//   { title: '14 ene 2023', url: 'https://www.youtube.com/watch?v=QXOdbtvpPfA&t=3s&ab_channel=MandragorasTV', thumbnail: '/portadas/Portada_Colaboraciones.png' },
-//   { title: '9 feb 2023', url: 'https://www.youtube.com/watch?v=EJ5fl4xN5Qs&t=806s&ab_channel=MandragorasTV', thumbnail: '/portadas/Portada_Escuela.png' },
-//   { title: '15 mar 2023', url: 'https://www.youtube.com/watch?v=GkmyQWzXVy0&t=1604s&ab_channel=MandragorasTV', thumbnail: '/tvrojo_sinlogo.png' },
-//   { title: '21 abr 2023', url: 'https://www.youtube.com/watch?v=XMHQKy0SIzM&t=2615s&ab_channel=MandragorasTV', thumbnail: '/portadas/Portada_periodismo.png' },
-//   { title: '25 may 2023', url: 'https://www.youtube.com/watch?v=TU20pWyWu_0&t=4709s&ab_channel=MandragorasTV', thumbnail: '/tvrojo_sinlogo.png' },
-//   { title: '29 jun 2023', url: 'https://youtube.com/live/2ewXuG3XxwE?feature=share', thumbnail: '/1.png' },
-//   { title: '27 jul 2023', url: 'https://youtube.com/live/0vyHiGum_Js?feature=share', thumbnail: '/header.jpg' },
-//   { title: '31 ago 2023', url: 'https://youtube.com/live/CQOFLhRYfbk?feature=share', thumbnail: '/portadas/Portada_Abundancia.png' },
-//   { title: '28 sept 2023', url: 'https://youtube.com/live/nnSeNkbGbBA?feature=share', thumbnail: '/mandragoras_banner.png' },
-//   { title: '26 oct 2023', url: 'https://youtube.com/live/X65hH0LZMRE?feature=share', thumbnail: '/portadas/Portada_Abundancia.png'},
-//   { title: '30 nov 2023', url: 'https://youtube.com/live/OJhy8rTjmMw?feature=share', thumbnail: '/portadas/portada_tv.png' },
-//   { title: '28 dic 2023', url: 'https://youtube.com/live/z_HnWm0S6nA?feature=share', thumbnail: '/logo/logo.png' },
-//   // 4ta temporada
-//   { title: '28 mar 2024', url: 'https://youtube.com/live/wgtB9rrJvJM', thumbnail: '/2.png' },
-//   { title: '25 abr 2024', url: 'https://youtu.be/x-hdQErjAoE', thumbnail: '/mandragoras_banner.png' },
-//   { title: '30 may 2024', url: 'https://www.youtube.com/watch?v=d7nNyrmLTOk&t=12s&ab_channel=MandragorasTV', thumbnail: '/portadas/Portada_Abundancia.png' },
-//   { title: '30 jun 2024', url: 'https://www.youtube.com/watch?v=lLl8y1dZI8A&t=66s&ab_channel=MandragorasTV', thumbnail: '/logo/logo_blanco.png' },
-//   { title: '31 jul 2024', url: 'https://youtu.be/S_i43kPjZdY', thumbnail: '/portadas/Portada_Colaboraciones.png' },
-//   { title: '25 ago 2024', url: 'https://youtu.be/ln9djMwBYP8', thumbnail: '/tvrojo_sinlogo.png' },
-//   { title: '29 sept 2024', url: 'https://youtu.be/a1OEVfcYsyw', thumbnail: '/portadas/Portada_Abundancia.png' },
-//   { title: '27 oct 2024', url: 'https://youtu.be/2uyeao0nh58', thumbnail: '/portadas/Portada_Escuela.png' },
-//   { title: '28 nov 2024', url: 'https://youtu.be/F5PnIrNeQN0', thumbnail: '/portadas/Portada_periodismo.png' },
-//   { title: '27 dic 2024', url: 'https://youtu.be/2ZUq5p3otoc', thumbnail: '/portadas/portada_tv.png' },
+    // Primera temporada
+    { title: '#4 - 27 sept 2021', url: 'https://www.youtube.com/embed/_s6f8jVOWWA?si=W4HLzKyC6DYFenBD', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    { title: '#3 - 6 sept 2021 ', url: 'https://www.youtube.com/embed/Rp_tiuYMFX8?si=Yu25N0Z2jxZThlIs', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#2 - 9 ago 2021', url: 'https://www.youtube.com/embed/wokcezrvteM?si=LcAL7aBxJMVZ2mA0', thumbnail: '/portadas/portada_contacto.png' },
+    { title: '#1 - 28 jun 2021', url: 'https://www.youtube.com/embed/Ex_1jomK_Ks?si=3VADkpJHq-DhddAM', thumbnail: '/tvrojo_sinlogo.png' },
+    // Segunda Temporada
+    { title: '#9 - 14 dic 2022', url: 'https://www.youtube.com/embed/BUjs5Br99lY?si=iiq-Qdta2R-DBmq-', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#8 - 28 oct 2022', url: 'https://www.youtube.com/embed/LBSpVAHE6DM?si=KyMA30gfFNz-Fa8Z', thumbnail:  '/portadas/Portada_Abundancia.png'},
+    { title: '#7 - 2 oct 2022', url: 'https://www.youtube.com/embed/h3ojoZ3ozqc?si=_GUkx_pWT2nOK73t', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#6 - 2 sept 2022', url: 'https://www.youtube.com/embed/wVmPwn3G0AY?si=KK4diKNLF_byLTgk', thumbnail: '/portadas/portada_contacto.png' },
+    { title: '#5 - 15 mar 2022', url: 'https://www.youtube.com/embed/HUEL1sCW7wk?si=WWuzzhqeCPZFUzQz', thumbnail: '/tvrojo_sinlogo.png' },
+    // Tercera Temporada
+    { title: '#21 - 28 dic 2023', url: 'https://www.youtube.com/embed/z_HnWm0S6nA?si=HyartOn703wvNxo2', thumbnail: '/logo/logo.png' },
+    { title: '#20 - 30 nov 2023', url: 'https://www.youtube.com/embed/OJhy8rTjmMw?si=GRWop_s1VdFulm6x', thumbnail: '/portadas/portada_tv.png' },
+    { title: '#19 - 26 oct 2023', url: 'https://www.youtube.com/embed/X65hH0LZMRE?si=p6XHbyG7VevixIoO', thumbnail: '/portadas/Portada_Abundancia.png'},
+    { title: '#18 - 28 sept 2023', url: 'https://www.youtube.com/embed/nnSeNkbGbBA?si=fBkP5w9ptMdANtHF', thumbnail: '/mandragoras_banner.png' },
+    { title: '#17 - 31 ago 2023', url: 'https://www.youtube.com/embed/CQOFLhRYfbk?si=G0HvJ0gAKPhRU9yT', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#16 - 27 jul 2023', url: 'https://www.youtube.com/embed/0vyHiGum_Js?si=FnncVuRQkPFJUo8e', thumbnail: '/header.jpg' },
+    { title: '#15 - 29 jun 2023', url: 'https://www.youtube.com/embed/2ewXuG3XxwE?si=7n7Hzd1ohX5KiKjJ', thumbnail: '/1.png' },
+    { title: '#14 - 25 may 2023', url: 'https://www.youtube.com/embed/TU20pWyWu_0?si=kcLwo2kTZOih_l5a', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#13 - 21 abr 2023', url: 'https://www.youtube.com/embed/XMHQKy0SIzM?si=lUnO3AWqCBe8C4Cv', thumbnail: '/portadas/Portada_periodismo.png' },
+    { title: '#12 - 15 mar 2023', url: 'https://www.youtube.com/embed/GkmyQWzXVy0?si=VaANiviWJQdUoEdo', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#11 - 9 feb 2023', url: 'https://www.youtube.com/embed/EJ5fl4xN5Qs?si=fi47Ha9r5kQRuhx-', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#10 - 14 ene 2023', url: 'https://www.youtube.com/embed/QXOdbtvpPfA?si=wSg7rWJ_nMzZLuZw', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    // 4ta temporada
+    { title: '#31 - 27 dic 2024', url: 'https://www.youtube.com/embed/2ZUq5p3otoc?si=F2P3Uh9_520Qn_Kp', thumbnail: '/portadas/portada_tv.png' },
+    { title: '#30 - 28 nov 2024', url: 'https://www.youtube.com/embed/F5PnIrNeQN0?si=5SuCzNDsxLlys6w5', thumbnail: '/portadas/Portada_periodismo.png' },
+    { title: '#29 - 27 oct 2024', url: 'https://www.youtube.com/embed/2uyeao0nh58?si=k78DWspCovRtHc9K', thumbnail: '/portadas/Portada_Escuela.png' },
+    { title: '#28 - 29 sept 2024', url: 'https://www.youtube.com/embed/a1OEVfcYsyw?si=n-PYQ52tO9rNz3vD', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#27 - 25 ago 2024', url: 'https://www.youtube.com/embed/ln9djMwBYP8?si=Rz4MA-rQjbwtkJ3g', thumbnail: '/tvrojo_sinlogo.png' },
+    { title: '#26 - 31 jul 2024', url: 'https://www.youtube.com/embed/S_i43kPjZdY?si=U45JRbu4Bf6bpzNO', thumbnail: '/portadas/Portada_Colaboraciones.png' },
+    { title: '#25 - 30 jun 2024', url: 'https://www.youtube.com/embed/lLl8y1dZI8A?si=KQs67mLY29VBMcbN', thumbnail: '/logo/logo_blanco.png' },
+    { title: '#24 - 30 may 2024', url: 'https://www.youtube.com/embed/d7nNyrmLTOk?si=PGdLd6ezjmM4AxrT', thumbnail: '/portadas/Portada_Abundancia.png' },
+    { title: '#23 - 25 abr 2024', url: 'https://www.youtube.com/embed/x-hdQErjAoE?si=CqHqk7cmn5JJXTTG', thumbnail: '/mandragoras_banner.png' },
+    { title: '#22 - 28 mar 2024', url: 'https://www.youtube.com/embed/wgtB9rrJvJM?si=05hDno6vs_wisfVY', thumbnail: '/2.png' },
 ];
 
 
@@ -53,65 +54,104 @@ const videos = [
             <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
             <h1 class="title-portada text-6xl md:text-9xl uppercase">Programas</h1>
             <!-- <p class="text-xl md:text-2xl mb-8">Tu descripción inspiradora aquí</p> -->
-            <a href="https://www.youtube.com/@mandragorastv" target="_blank" class="bg-green-700 hover:bg-purple-900 transition text-white font-bold py-2 px-4 rounded">
+            <!-- <a href="https://www.youtube.com/@mandragorastv" target="_blank" class="bg-green-700 hover:bg-purple-900 transition text-white font-bold py-2 px-4 rounded">
                 Explora nuestro canal
-            </a>
+            </a> -->
             </div>
         </div>
     </section>
     <section class="container mx-auto px-4 m-6 md:mb-4">
         
-        <div class="flex justify-between items-center">
-            <h1 class="text-4xl my-12">MandrágorasTV -  Programas</h1>
-            <!-- <a class="bg-purple-900 p-2 rounded flex items-center" href="https://www.youtube.com/@mandragorastv">Ir a nuestro canal <img class="mx-2" width="30" src="/youtube-icon.png" alt=""></a> -->
+        <div class="flex flex-col md:flex-row md:justify-between items-center">
+            <h1 class="text-2xl md:text-4xl my-4 md:my-12">MandrágorasTV -  Programas</h1>
+            <a class="bg-green-700 hover:bg-purple-900 transition p-2 rounded flex items-center text-base" href="https://www.youtube.com/@mandragorastv">Explora nuestro canal <img class="mx-2" width="30" src="/youtube-icon.png" alt=""></a>
         </div>
-  
-        <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {videos.map(video => (
-              <div class="relative w-full h-64 md:h-80">
-                <a href={video.url} target="_blank">
-                  <img src={video.thumbnail} alt={video.title} class="w-full h-full object-cover rounded-lg shadow-lg" />
-                  <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                    <h2 class="text-white text-3xl font-bold">{video.title}</h2>
-                  </div>
-                </a>
-              </div>
-            ))}
-          </div> -->
+        <!-- <div class="flex flex-col md:flex-row items-center">
+            <h2 class="w-full md:w-1/3 text-white text-xl md:text-4xl my-4 text-purple-700">Sintoniza nuestra última programa</h2>
+            <div class="w-full md:w-2/3 h-64 md:h-96 mb-12">
+                <iframe
+                id="video-iframe"
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/2ZUq5p3otoc?si=F2P3Uh9_520Qn_Kp"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </div>
 
-        <p class="p-2 text-2xl text-white bg-purple-900 inline mb-8">Primera temporada</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
-            {videos.slice(0,4).map(video => (
-                <div class=" w-full h-64 md:h-96 mb-12">
-                    <iframe
-                    id="video-iframe"
-                    class="w-full h-full"
-                    src={video.url}
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    ></iframe>
-                    <h2 class="program-date text-white text-xl font-bold">{video.title}</h2>
-                </div>
-                
-            ))}
-        </div>
-        <p class="p-2 text-2xl text-white bg-purple-900 inline mb-8">Segunda temporada</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
-            {videos.slice(4,9).map(video => (
-                <div class=" w-full h-64 md:h-96 mb-12">
-                    <iframe
-                    id="video-iframe"
-                    class="w-full h-full"
-                    src={video.url}
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    ></iframe>
-                    <h2 class="program-date text-white text-xl font-bold my-4">{video.title}</h2>
-                </div>
-                
-            ))}
+        </div> -->
+        <div class="mt-12">
+            <p class="p-2 text-sm md:text-2xl text-white bg-purple-900 inline mb-8">Cuarta temporada</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+                {videos.slice(21,31).map(video => (
+                    <div class=" w-full h-64 md:h-96 mb-12">
+                        <iframe
+                        id="video-iframe"
+                        class="w-full h-full"
+                        src={video.url}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                        <h2 class="program-date text-white text-xl font-bold my-4 ">{video.title}</h2>
+                    </div>
+                    
+                ))}
+            </div>
+    
+            <p class="p-2 text-sm md:text-2xl text-white bg-purple-900 inline mb-8">Tercera temporada</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+                {videos.slice(9,21).map(video => (
+                    <div class=" w-full h-64 md:h-96 mb-12">
+                        <iframe
+                        id="video-iframe"
+                        class="w-full h-full"
+                        src={video.url}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                        <h2 class="program-date text-white text-xl font-bold my-4 ">{video.title}</h2>
+                    </div>
+                    
+                ))}
+            </div>
+    
+            <p class="p-2 text-sm md:text-2xl text-white bg-purple-900 inline mb-8">Segunda temporada</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+                {videos.slice(4,9).map(video => (
+                    <div class=" w-full h-64 md:h-96 mb-12">
+                        <iframe
+                        id="video-iframe"
+                        class="w-full h-full"
+                        src={video.url}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                        <h2 class="program-date text-white text-xl font-bold my-4">{video.title}</h2>
+                    </div>
+                    
+                ))}
+            </div>
+    
+            <p class="p-2 text-sm md:text-2xl text-white bg-purple-900 inline mb-8">Primera temporada</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-12">
+                {videos.slice(0,4).map(video => (
+                    <div class=" w-full h-64 md:h-96 mb-12">
+                        <iframe
+                        id="video-iframe"
+                        class="w-full h-full"
+                        src={video.url}
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        ></iframe>
+                        <h2 class="program-date text-white text-xl font-bold">{video.title}</h2>
+                    </div>
+                    
+                ))}
+            </div>
         </div>
     </section>
     
