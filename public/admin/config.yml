@@ -19,4 +19,19 @@ collections:
       - name: 'body'
         label: 'Body'
         widget: 'markdown'
+  - name: pages
+    label: 'Pages'
+    folder: 'src/content/pages'
+    create: true
+    fields:
+      - name: 'title'
+        label: 'Title'
+        widget: 'string'
+      - name: 'slug'
+        label: 'Slug'
+        widget: 'string'
+      - name: 'body'
+        label: 'Body'
+        widget: 'markdown'
 locale: 'es'
+logo_url: https://mandragorastv.com/logo/logo.png
